@@ -1,0 +1,100 @@
+/* General */
+
+body {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+ul {
+    padding: 0;
+}
+
+img {
+    width: 150px;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid brown;
+    box-shadow: 2px 4px 5px brown;
+    text-align: center;
+}
+
+#container {
+    padding: 0 100px 0 100px;
+}
+
+#choices li, #answer li {
+    display: inline-block;
+    margin: 10px;
+    padding: 5px 10px;
+    border: 1px solid brown;
+    border-radius: 5px;
+    box-shadow: 2px 4px 5px brown;
+}
+
+#replay {
+    padding: 5px 10px;
+    border: 1px solid brown;
+    border-radius: 5px;
+    box-shadow: 2px 4px 5px brown;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+#aside {
+    display: none;
+}
+
+#aside img {
+    width: 250px;
+}
+
+.disabled {
+    opacity: .5;
+}
+
+.wingame {
+    flex-basis: 100%;
+    background-image : url('../img/gif/photofunky.gif');
+    color : white;
+    background-position : center;
+    height : 50vh;
+    padding-top: 100px !important;
+}
+
+.endgame {
+    flex-basis: 100%;
+    background-color : red;
+    background-position : center;
+    height : 50vh;
+    padding-top: 100px !important;
+}
+
+@media screen and (max-width: 640px) {
+    body {
+        width: 95%;
+        margin: 10px auto;
+    }
+
+    .wingame {
+        padding-top: 50px !important;
+        padding-bottom: 50px !important;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #container {
+        padding: 0;
+    }
+}
